@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/teacher.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/teacher.js"></script>
+</head>
+
+<body>
+
+
+    <ol class="breadcrumb">
+        <li>基础信息</li>
+        <li class="active">老师信息</li>
+    </ol>
+    <div class="container">
+        <div class="header clearfix">
+            <div class="sec-title">
+                <select class="set">
+                    <option>全部学院</option>
+                    <option>2组</option>
+                    <option>6组</option>
+                    <option>教育学院</option>
+                    <option>二级学院</option>
+                </select>
+                <span class="glyphicon glyphicon-chevron-down my-drop"></span>
+                <button class="btn btn-default btn-warning">查找</button>
+            </div>
+        </div>
+
+        <!--窗口-->
+        <div class="window-item" id="window-item" style="display: none">
+            <div class="item-head text-center clearfix">
+                <h3>添加信息</h3>
+            </div>
+            <form class="cont">
+                <div class="form-group">
+                    <label for="name">姓名:</label>
+                    <input id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="number">联系方式(注：登录账号):</label>
+                    <input id="number" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">密码(默认):</label>
+                    <input id="pwd" class="form-control" value="123456">
+                </div>
+                <div class="form-group rltv">
+                    <label for="job">职业:</label>
+                    <div class="dropdown" id="job">
+                        <select class="sec">
+                            <option>营销</option>
+                            <option>人力资源</option>
+                            <option>企业管理</option>
+                            <option>财务</option>
+                            <option>运营</option>
+                            <option>技术</option>
+                            <option>市场</option>
+                            <option>全方位</option>
+                        </select>
+                    </div>
+                    <span class="glyphicon glyphicon-chevron-down window-drop"></span>
+                </div>
+                <div class="form-group">
+                    <label for="college">学院:</label>
+                    <div class="dropdown" id="college">
+                        <select class="sec">
+                            <option>教育学院</option>
+                            <option>2组</option>
+                            <option>6组</option>
+                            <option>二级学院</option>
+                        </select>
+                    </div>
+                    <span class="glyphicon glyphicon-chevron-down window-drop"></span>
+                </div>
+                <div class="btn-group btn-pad">
+                    <button class="btn btn-default btn-return" id="cons">取消</button>
+                    <button class="btn btn-info"> 确定</button>
+                </div>
+            </form>
+        </div>
+        <div class="window" id="window" style="display: none"></div>
+
+        <!--表格-->
+        <div class="head-title">
+            <h3>老师信息一览表</h3>
+        </div>
+        <div class="title clearfix">
+            共查询到：<span>3</span>
+            <div class="btn-group pull-right btn-width ">
+                <button class="btn btn-primary btn-lf  add" value="添加"> 添加</button>
+                <button class="btn btn-primary btn-info btn-lf add" value="添加"> 导入模板</button>
+            </div>
+
+        </div>
+        <table class="table table-bordered .table-striped .table-bordered .table-hover">
+            <tr>
+                <td>序号</td>
+                <td>姓名</td>
+                <td>工号</td>
+                <td>性别</td>
+                <td>所属专业</td>
+                <td>所属专业代码</td>
+                <td>所属部门或院校</td>
+                <td>部门或学院代码</td>
+                <td>在册状态</td>
+                <td class="text-center">操作</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>王一</td>
+                <td>13</td>
+                <td>男</td>
+                <td>会计</td>
+                <td>0711</td>
+                <td>商学院</td>
+                <td>07</td>
+                <td>已注册</td>
+                <td class="text-center">
+                    <div class="btn-group">
+                        <button class="btn btn-primary btn-line write" value="编辑"> 编辑</button>
+                        <button class="btn btn-danger" value="删除"> 删除</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>王一</td>
+                <td>13</td>
+                <td>男</td>
+                <td>会计</td>
+                <td>0711</td>
+                <td>商学院</td>
+                <td>07</td>
+                <td>已注册</td>
+                <td class="text-center">
+                    <div class="btn-group">
+                        <button class="btn btn-primary btn-line write" value="编辑"> 编辑</button>
+                        <button class="btn btn-danger" value="删除"> 删除</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>王一</td>
+                <td>13</td>
+                <td>男</td>
+                <td>会计</td>
+                <td>0711</td>
+                <td>商学院</td>
+                <td>07</td>
+                <td>已注册</td>
+                <td class="text-center">
+                    <div class="btn-group">
+                        <button class="btn btn-primary btn-line write" value="编辑"> 编辑</button>
+                        <button class="btn btn-danger" value="删除"> 删除</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+</body>
+
+</html>
