@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/major.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/major.js"></script>
+</head>
+
+<body>
+    <ol class="breadcrumb">
+        <li>基础信息</li>
+        <li class="active">专业部门</li>
+    </ol>
+    <div class="container">
+        <div class="header clearfix">
+            <div class="sec-title">
+                <select class="set">
+                    <option>全部学院</option>
+                    <option>2组</option>
+                    <option>6组</option>
+                    <option>教育学院</option>
+                    <option>二级学院</option>
+                </select>
+                <span class="glyphicon glyphicon-chevron-down my-drop"></span>
+                <button class="btn btn-default btn-warning">查找</button>
+            </div>
+        </div>
+        <div class="window-item" id="window-item" style="display: none">
+            <div class="item-head text-center clearfix">
+                <h3>添加学院</h3>
+            </div>
+            <form class="cont">
+                <div class="form-group" id="num">
+                    <label for="college">学院:</label>
+                    <div class="dropdown" id="college">
+                        <select class="sec" id="name">
+                            <option>教育学院</option>
+                            <option>2组</option>
+                            <option>6组</option>
+                            <option>二级学院</option>
+                        </select>
+                    </div>
+                    <span class="glyphicon glyphicon-chevron-down window-drop"></span>
+                </div>
+                <div class="form-group">
+                    <label for="marjo">专业:</label>
+                    <input id="marjo" class="form-control">
+                </div>
+
+                <div class="btn-group btn-pad">
+                    <button class="btn btn-default btn-return" id="cons">取消</button>
+                    <button class="btn btn-info"> 确定</button>
+                </div>
+            </form>
+        </div>
+        <div class="window" id="window" style="display: none"></div>
+
+        <div class="head-title">
+            <h3>部门专业一览表</h3>
+        </div>
+        <div class="title">
+            共查询到：<span>1</span>
+            <button class="btn btn-primary pull-right add" value="添加"> 添加</button>
+        </div>
+        <table class="table table-bordered .table-striped .table-bordered .table-hover">
+            <tr>
+                <td>序号</td>
+                <td>所在学院</td>
+                <td>专业名称</td>
+                <td class="text-center">操作</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>教育学院</td>
+                <td>----</td>
+                <td class="text-center">
+                    <div class="btn-group">
+                        <button class="btn btn-primary btn-line write" value="编辑"> 编辑</button>
+                        <button class="btn btn-danger" value="删除"> 删除</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+</html>

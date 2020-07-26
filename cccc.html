@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> 标题栏</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cc.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <ol class="breadcrumb">
+        <li>Home</li>
+        <li>Library</li>
+        <li class="active">Data</li>
+    </ol>
+    <h3 class="text-center">学校信息</h3>
+    <div class="box center-block">
+        <div class="item-row">
+            <div class="text">学校logo：</div>
+            <div class="content">
+                <img src="image/111.png">
+                <input type="file" class="file" style="opacity: 0">
+            </div>
+        </div>
+        <div class="item-row">
+            <div class="text">账号注册审核：</div>
+            <div class="content form-group pad ">
+                <label for="left-1" class="radio-inline active">
+                    <input type="radio" id="left-1" value="option1" name="login" checked>自由注册
+                </label>
+                <label for="left-2" class="radio-inline">
+                    <input type="radio" id="left-2" value="option2" name="login">审核注册
+                </label>
+            </div>
+        </div>
+        <div class="item-row">
+            <div class="text">学生账号注册：</div>
+            <div class="content form-group pad ">
+                <label for="left-3" class="radio-inline">
+                    <input type="radio" id="left-3" value="option1" name="number" checked>不要求输入专业与学号
+                </label>
+                <label for="left-4" class="radio-inline">
+                    <input type="radio" id="left-4" value="option2" name="number">要求输入专业与学号
+                </label>
+            </div>
+        </div>
+        <div class="item-row">
+            <div class="text">组织信息公开：</div>
+            <div class="content form-group pad ">
+                <label for="left-5" class="radio-inline">
+                    <input type="radio" id="left-5" value="option1" name="text" checked>共享
+                </label>
+                <label for="left-6" class="radio-inline">
+                    <input type="radio" id="left-6" value="option2" name="text">私密
+                </label>
+            </div>
+        </div>
+        <div class="item-row">
+            <div class="text">学校介绍：</div>
+            <textarea class="tea"> </textarea>
+        </div>
+        <div class="item-row">
+            <div class="text">合作支持：</div>
+            <textarea class="tea"> </textarea>
+        </div>
+        <div class="item-row btn-group btn-pad">
+            <div class="btn btn-default btn-reset ">重置</div>
+            <div class="btn btn-info"> 提交</div>
+        </div>
+    </div>
+</body>
+
+</html>
